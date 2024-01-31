@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Описание проекта" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>test</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header container">
+      <a class="header__logo-link" href="/">
+        <svg width="23" height="15">
+          <use href="img/stack.svg#logo"></use>
+        </svg>
+        Test Task
+      </a>
+      <nav class="header__nav">
+        <ul class="header__site-nav">
+          <li>
+            <a class="header__link" href="/">About Us</a>
+          </li>
+          <li>
+            <a class="header__link" href="/">Features</a>
+          </li>
+          <li>
+            <a class="header__link header__link--active" href="/">Pricing</a>
+          </li>
+          <li>
+            <a class="header__link" href="/">Product</a>
+          </li>
+          <li>
+            <a class="header__link" href="/">Contact</a>
+          </li>
+        </ul>
+        <ul class="header__user-nav">
+          <li>
+            <a class="header__link" href="/">Login</a>
+          </li>
+          <li>
+            <a class="header__link header__link--sign-up" href="/">
+              <span class="header__link-text">Sign Up</span>
+            </a>
+          </li>
+        </ul>
+        <button class="header__button" type="button"></button>
+      </nav>
+    </header>
+    <main>
+      <section class="pricing container">
+        <h1 class="pricing__title">Instantly Connect with Your Leads</h1>
+        <ul class="pricing__list">
+          <li class="pricing__item option">
+            <h2 class="option__title">Basic Survival</h2>
+            <div class="option__price price">
+              <span class="price__currency">$</span>
+              <span class="price__amount"
+              data-price="30">30</span>
+              <span class="price__period">/Month</span>
+            </div>
+            <p class="option__description">Get Torque’s basic plan to optimise you lead generation process.</p>
+            <h3 class="option__second-title">Core Features</h3>
+            <span class="option__footnote">Basic</span>
+            <ul class="option__list">
+              <li>Email addresses</li>
+              <li>Phone numbers</li>
+              <li>Unlimited Lists</li>
+            </ul>
+            <a class="option__link" href="/">Start Free Trial</a>
+          </li>
+          <li class="pricing__item option option--black-mod">
+            <h2 class="option__title">Mission Professional</h2>
+            <div class="option__price price">
+              <span class="price__currency">$</span>
+              <span class="price__amount"
+              data-price="276">276</span>
+              <span class="price__period">/Month</span>
+            </div>
+            <p class="option__description">Get Torque’s basic plan to optimise you lead generation process.</p>
+            <h3 class="option__second-title">Core Features</h3>
+            <span class="option__footnote">Boost Tools</span>
+            <ul class="option__list">
+              <li class="option__item--opacity-mod">Email addresses</li>
+              <li class="option__item--opacity-mod">Phone numbers</li>
+              <li class="option__item--opacity-mod">Unlimited Lists</li>
+              <li>Export contacts</li>
+              <li>Prospecting</li>
+              <li>50MB Per File Attachment</li>
+            </ul>
+            <a class="option__link option__link--black-mod" href="/">Get Started
+              <svg width="16" height="16">
+                <use href="/img/stack.svg#button-arrow"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="pricing__item option">
+            <h2 class="option__title">Rocketship Premium</h2>
+            <div class="option__price price">
+              <span class="price__currency">$</span>
+              <span class="price__amount"
+              data-price="420">420</span>
+              <span class="price__period">/Month</span>
+            </div>
+            <p class="option__description">Get Torque’s basic plan to optimise you lead generation process.</p>
+            <h3 class="option__second-title">Core Features</h3>
+            <span class="option__footnote">Super Fuel</span>
+            <ul class="option__list">
+              <li class="option__item--opacity-mod">Email addresses</li>
+              <li class="option__item--opacity-mod">Phone numbers</li>
+              <li class="option__item--opacity-mod">Unlimited Lists</li>
+              <li class="option__item--opacity-mod">Export contacts</li>
+              <li class="option__item--opacity-mod">Prospecting</li>
+              <li>50MB Per File Attachment</li>
+              <li>Basic analytics</li>
+            </ul>
+            <a class="option__link" href="/">Start Free Trial</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>
