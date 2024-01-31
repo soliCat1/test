@@ -1,0 +1,48 @@
+.pricing {
+  padding: 0 170px 50px 170px;
+
+  @include vp-767 {
+    padding: 0 20px 40px 20px;
+  }
+}
+
+.pricing__title {
+  font-size: 41px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 69px 0;
+  padding: 0;
+  line-height: normal;
+
+  @include vp-767 {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 0 30px 0;
+  }
+}
+
+.pricing__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  @include vp-1279 {
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  @include vp-1023 {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  @include vp-767 {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+}

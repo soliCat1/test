@@ -1,0 +1,142 @@
+.option {
+  border-radius: 12px;
+  background: #6a994e;
+  box-shadow: 0 3px 94px 0 rgba(0, 0, 0, 0.25);
+  padding: 38px 60px 28px 60px;
+  min-height: 592px;
+  width: 334px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  opacity: 0;
+  transition: opacity 2s ease;
+
+  @include vp-1279 {
+    flex: 40%;
+  }
+
+  @include vp-1023 {
+    width: 100%;
+  }
+
+  @include vp-767 {
+    padding: 20px;
+    min-height: fit-content;
+  }
+
+  &--black-mod {
+    position: absolute;
+    top: -29px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #1d252b;
+    box-shadow: 0 3px 94px 0 rgba(0, 0, 0, 0.15);
+    z-index: 10;
+
+    @include vp-1279 {
+      position: static;
+      transform: none;
+      flex: 100%;
+      order: -1;
+    }
+
+    @include vp-1023 {
+      order: 0;
+    }
+  }
+}
+
+.option__title {
+  margin: 0 0 15px 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.option__description {
+  margin: 0 0 22px 0;
+  padding-bottom: 27px;
+  position: relative;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+  line-height: 140%;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -60px;
+    right: -60px;
+    height: 1px;
+    background-color: rgba(#ffffff, 0.1);
+
+    @include vp-767 {
+      left: -20px;
+      right: -20px;
+    }
+  }
+}
+
+.option__second-title {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 130%;
+  margin: 0 0 10px 0;
+}
+
+.option__footnote {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 128%;
+  margin-bottom: 24px;
+}
+
+.option__list {
+  margin: 0;
+  padding: 0;
+  list-style: inside url("/img/svg/arrow.svg");
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.option__link {
+  color: #ffffff;
+  text-align: center;
+  margin-top: auto;
+  display: block;
+  width: 100%;
+  padding: 12px 22px;
+  font-weight: 500;
+  border-radius: 7px;
+  border: 1px solid #d0d0d0;
+  box-shadow: 0 6px 14px 0 rgba(0, 0, 0, 0.1);
+
+  @include vp-767 {
+    margin-top: 30px;
+  }
+
+  @include hover {
+    color: #6a994e;
+    background-color: #ffffff;
+  }
+
+  &--black-mod {
+    background-color: #bc4749;
+    border: 1px solid #d66567;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    @include hover {
+      color: #ffffff;
+      background: #a53f41;
+    }
+  }
+}
+
+.option__item--opacity-mod {
+  opacity: 0.7;
+}

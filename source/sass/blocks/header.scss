@@ -1,0 +1,162 @@
+.header {
+  padding: 35px 48px 46px 48px;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  @include vp-1023 {
+    padding: 20px;
+  }
+}
+
+.header__logo-link {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: line-through;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  margin-right: 87px;
+  flex-shrink: 0;
+
+  @include vp-767 {
+    margin-right: 20px;
+  }
+
+  @include hover {
+    text-decoration: none;
+  }
+}
+
+.header__nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-right: 15px;
+  align-items: center;
+
+  @include vp-1023 {
+    justify-content: end;
+    gap: 30px;
+    padding: 0;
+  }
+}
+
+.header__site-nav {
+  display: flex;
+  gap: 48px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @include vp-1023 {
+    display: none;
+
+    &.header__site-nav--open {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 75px;
+      left: 0;
+      right: 0;
+      gap: 20px;
+      z-index: 100;
+      ge: url('../img/background.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      text-align: center;
+      padding: 20px;
+
+      @include vp-767 {
+        top: 60px;
+      }
+    }
+  }
+}
+
+.header__link {
+  color: inherit;
+  opacity: 0.8;
+  display: block;
+
+  &--sign-up {
+    opacity: 1;
+    font-weight: 500;
+    border-radius: 7px;
+    border: 1px solid #d66567;
+    background: #bc4749;
+    text-align: center;
+    padding: 9px 14px;
+    min-width: 114px;
+
+    @include hover {
+      background: #a53f41;
+    }
+
+    @include vp-767 {
+      min-width: 20px;
+      background-image: url('../img/svg/sign-in.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: transparent;
+      border: none;
+
+      @include hover {
+        background-image: url('../img/svg/sign-in-hover.svg');
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+
+    @include vp-1023 {
+      width: fit-content;
+      margin: 0 auto;
+    }
+  }
+
+  &--active {
+    opacity: 1;
+    cursor: auto;
+  }
+
+  @include hover {
+    opacity: 1;
+  }
+}
+
+.header__user-nav {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header__button {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  background-image: url('../img/svg/burger.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  display: none;
+  cursor: pointer;
+
+  &--active {
+    background-image: url('../img/svg/close.svg');
+  }
+
+  @include vp-1023 {
+    display: block;
+  }
+}
+
+.header__link-text {
+  @include vp-767 {
+    display: none;
+  }
+}
